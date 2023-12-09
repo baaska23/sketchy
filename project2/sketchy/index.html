@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+        #grid-container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 480px;
+            margin-top: 40px;
+        }
+        .grid-square{
+            width: 15px;
+            height: 15px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        #restart {
+            position: absolute;
+            top: 0;
+            left: -40px;
+            margin: 60px;
+            margin-top: 60px;
+            background-color: lightcoral;
+        }
+        #generate {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            margin: 30px;
+            background-color: lightgreen;
+        }
+        #numSquares {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            margin: 0px;
+            width: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="number" id="numSquares" placeholder="Enter sqaures per side:">
+    <div id="grid-container"></div>
+    <button id="restart">Restart</button>
+    <button id="generate">Generate Grid</button>
+    <script src="draw.js"></script>
+</body>
+</html>
+
